@@ -1,16 +1,13 @@
-var users = [{ name: 'sosi', age: 20 }, { name: 'girls day', age: 23 }];
+var users = [{ name: 'a', age: 10 }, { name: 'b', age: 20 }, { name: 'c', age: 30 }, { name: 'd', age: 40 }];
+
+console.log("length : %d",users.length);
+console.dir(users);
+
+var users2= users.slice(1,3);
+console.log("2")
+console.dir(users2);
 
 
-var add = function (a, b) { return a + b }
-
-
-users.push(add)
-users.push(add)
-users.push(add)
-
-console.log('users : %d', users.length);
-console.log('user add: %d', users[2](10, 10));
-
-console.log('%d', users[2](10, 20))
-console.log('%d', users[3](30, 40))
-console.log('%d', users[4](50, 60))
+var users3 = users2.slice(1);
+console.log("3")
+console.dir(users3);
