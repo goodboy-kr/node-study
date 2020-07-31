@@ -1,0 +1,25 @@
+
+var path = require('path');
+
+
+var person = {};
+person['age'] = 20;
+
+//객체안의 변수를 선언하는 방법이 두가지 있음
+person['name'] = 'Girls Generations';
+person.mobile = '010-1004-1004';
+
+
+//객체 안의 값을 불러오는 방법이 두가지 있음
+console.log('mobile : %s', person['mobile']);
+console.log('mobile : %s', person.mobile);
+
+
+//객체 안에 함수가 포함될 수 있음 ex)add
+var person1 = {
+    age: 20,
+    name: 'Girls Generation',
+    add: function (a, b) { return a + b },    
+}
+
+console.log(person1.add(10,20))
